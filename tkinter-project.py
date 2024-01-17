@@ -1,5 +1,5 @@
 import tkinter as tk
-
+from PIL import Image
 #functions
 def compute():
     try:
@@ -14,6 +14,7 @@ canvas = tk.Tk()
 canvas.geometry("400x400")
 canvas.title("something")
 canvas.config(bg = "light blue")
+canvas.iconbitmap("physics.ico")#title image for window
 #labels
 lblRadius = tk.Label(canvas, text="Enter radius of the circle:")
 lblVelocity = tk.Label(canvas, text="Enter angular velocity:")
