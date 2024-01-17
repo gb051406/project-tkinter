@@ -13,7 +13,7 @@ def compute():
 #window config
 canvas = tk.Tk()
 canvas.geometry("630x460")
-canvas.title("something")
+canvas.title("Acceleration conversion calculator")
 canvas.config(bg = "light blue")
 canvas.iconbitmap("physics.ico")#title image for window
 
