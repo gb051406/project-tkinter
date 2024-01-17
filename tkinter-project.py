@@ -3,11 +3,11 @@ import tkinter as tk
 #functions
 def compute():
     try:
-        tanAcc = (float(txtradius.get()))*(float(txtacc.get()))
+        tanAcc = (float(txtradius.get()))*(float(txtacc.get())) #calculations
         centrip = (float(txtspeed.get())**2)/(float(txtradius.get()))
-        lblsolutionOne.config(text="Tangential Acceleration = "+str(tanAcc))
+        lblsolutionOne.config(text="Tangential Acceleration = "+str(tanAcc)) #changes solution text to solution
         lblsolutionTwo.config(text="Centripetal Acceleration = "+str(centrip))
-    except ValueError:
+    except ValueError: #allows for no stopage when entering numbers
         lblsolutionOne.config(text="ERROR: enter only numbers")
 #window config
 canvas = tk.Tk()
